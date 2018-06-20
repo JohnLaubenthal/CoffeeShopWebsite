@@ -1,0 +1,85 @@
+﻿.container {
+    display: grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 150px); 
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 90%;
+}
+.logo{font-size: 20px;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: blue;
+        }
+
+.grid-item-1 {
+    grid-column: 1 / span 2 ;
+    display: flex;
+    justify-content: center;
+}
+.grid-item-2{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    background-color: white;
+}
+.grid-item-3 {
+    grid-row: 4;
+    background-image: url('images/coffee.jpg');
+    background-size:auto;
+    background-color: white;
+}
+.grid-item-4 {
+    grid-row: 5;
+    background-image: url('images/coffee3.jpg');
+    background-size: auto;
+    background-color: white;
+}
+.grid-item-5 {
+    grid-row: 6;
+    background-image: url('images/coffee2.jpg');
+    display: flex;
+    background-size: auto;
+    background-color: white;
+    
+}
+.grid-item-6{
+    grid-column: 2;
+    grid-row: 4 / span 3;
+background-image: url('images/happiness-within.jpg');
+background-size:cover;
+    /*background-color: antiquewhite;*/
+}
+.grid-item-7{
+    grid-row: 7;
+    grid-column: 1 / span 2;
+    background-color: black;
+}
+.grid-item-8{
+    grid-row: 8;
+    grid-column: 1 / span 2;
+    background-color:green;
+}
